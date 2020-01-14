@@ -116,17 +116,17 @@ const BoxAndWiskers = Chart.elements.BoxAndWhiskers = ArrayElementBase.extend({
     }
 
     // Draw the whiskers
-    ctx.beginPath();
-    ctx.moveTo(x0, boxplot.whiskerMin);
-    ctx.lineTo(x0 + width, boxplot.whiskerMin);
-    ctx.moveTo(x, boxplot.whiskerMin);
-    ctx.lineTo(x, boxplot.q1);
-    ctx.moveTo(x0, boxplot.whiskerMax);
-    ctx.lineTo(x0 + width, boxplot.whiskerMax);
-    ctx.moveTo(x, boxplot.whiskerMax);
-    ctx.lineTo(x, boxplot.q3);
-    ctx.closePath();
-    ctx.stroke();
+    // ctx.beginPath();
+    // ctx.moveTo(x0, boxplot.whiskerMin);
+    // ctx.lineTo(x0 + width, boxplot.whiskerMin);
+    // ctx.moveTo(x, boxplot.whiskerMin);
+    // ctx.lineTo(x, boxplot.q1);
+    // ctx.moveTo(x0, boxplot.whiskerMax);
+    // ctx.lineTo(x0 + width, boxplot.whiskerMax);
+    // ctx.moveTo(x, boxplot.whiskerMax);
+    // ctx.lineTo(x, boxplot.q3);
+    // ctx.closePath();
+    // ctx.stroke();
   },
   _drawBoxPlotHoriz(vm, boxplot, ctx) {
     const y = vm.y;
@@ -160,17 +160,17 @@ const BoxAndWiskers = Chart.elements.BoxAndWhiskers = ArrayElementBase.extend({
     }
 
     // Draw the whiskers
-    ctx.beginPath();
-    ctx.moveTo(boxplot.whiskerMin, y0);
-    ctx.lineTo(boxplot.whiskerMin, y0 + height);
-    ctx.moveTo(boxplot.whiskerMin, y);
-    ctx.lineTo(boxplot.q1, y);
-    ctx.moveTo(boxplot.whiskerMax, y0);
-    ctx.lineTo(boxplot.whiskerMax, y0 + height);
-    ctx.moveTo(boxplot.whiskerMax, y);
-    ctx.lineTo(boxplot.q3, y);
-    ctx.closePath();
-    ctx.stroke();
+    // ctx.beginPath();
+    // ctx.moveTo(boxplot.whiskerMin, y0);
+    // ctx.lineTo(boxplot.whiskerMin, y0 + height);
+    // ctx.moveTo(boxplot.whiskerMin, y);
+    // ctx.lineTo(boxplot.q1, y);
+    // ctx.moveTo(boxplot.whiskerMax, y0);
+    // ctx.lineTo(boxplot.whiskerMax, y0 + height);
+    // ctx.moveTo(boxplot.whiskerMax, y);
+    // ctx.lineTo(boxplot.q3, y);
+    // ctx.closePath();
+    // ctx.stroke();
   },
   _getBounds() {
     const vm = this._view;
